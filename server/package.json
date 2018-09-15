@@ -1,0 +1,14 @@
+{
+  "name": "poob-info_tech-challenge_server",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Jhonatan Amorim (amorim.dev@gmail.com)",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

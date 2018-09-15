@@ -1,0 +1,14 @@
+{
+  "name": "poob-info_tech-challenge",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Jhonatan Amorim (amorim.dev@gmail.com)",
+  "scripts": {
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  }
+}
