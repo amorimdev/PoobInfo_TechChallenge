@@ -14,7 +14,6 @@ module.exports.create = function (model, req, res, next) {
 }
 
 module.exports.findOne = function (model, req, res, next) {
-  console.log()
   const query = { _id: req.params.id }
 
   findOne(model, query)
