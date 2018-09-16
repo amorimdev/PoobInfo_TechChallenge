@@ -24,8 +24,12 @@ function errorHandler (err, req, res, next) {
 }
 
 const company = require('./routes/company')
-app.use('/company', company)
+app.use('/companies', company)
+
+const customer = require('./routes/customer')
+app.use('/customers', customer)
 
 const port = process.env.APP_PORT
 const server = app.listen(port, () => console.log(`Listening server on port ${port}`))
+
 module.exports = server

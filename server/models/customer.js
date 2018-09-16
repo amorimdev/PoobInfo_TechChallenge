@@ -6,11 +6,15 @@ const Schema = mongoose.Schema
 
 const CustomerSchema = new Schema({
   companyId: {
-    type: String, ref: 'company'
+    type: String, ref: 'Company'
   },
   createdAt: {
     type: Date,
     default: new Date().getTime()
+  },
+  rewardsNumber: {
+    type: String,
+    required: true
   },
   name: {
     type: String,
@@ -24,7 +28,13 @@ const CustomerSchema = new Schema({
   }
 })
 
+mongoose.set('useCreateIndex', true)
 autoIncrement.initialize(mongoose.connection)
-CustomerSchema.plugin(autoIncrement.plugin, 'customer')
+CustomerSchema.plugin(autoIncrement.plugin, {
+  model: 'Customer',
+  field: '_id',
+  startAt: 1,
+  incrementBy: 1
+})
 
-module.exports = mongoose.model('customer', CustomerSchema)
+module.exports = mongoose.model('Customer', CustomerSchema)

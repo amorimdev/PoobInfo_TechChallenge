@@ -16,12 +16,7 @@ const CompanySchema = new Schema({
   name: {
     type: String,
     required: true
-  },
-  customers: [
-    {
-      type: Schema.Types.ObjectId, ref: 'customer'
-    }
-  ]
+  }
 })
 
-module.exports = mongoose.model('company', CompanySchema)
+module.exports = mongoose.model('Company', CompanySchema)
