@@ -4,6 +4,7 @@ const mongoose = require('mongoose')
 
 module.exports = () => {
   mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true })
+  mongoose.set('useFindAndModify', false)
 
   mongoose.connection.on('connected', () => {
     console.log(`Mongoose default connection is open to ${process.env.MONGO_URL}`)

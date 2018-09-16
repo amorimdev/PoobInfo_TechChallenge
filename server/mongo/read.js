@@ -7,6 +7,10 @@ module.exports.findOne = (model, query) => {
         return reject(err)
       }
 
+      if (!entity) {
+        return reject(new Error('Entity not found.'))
+      }
+
       resolve(entity)
     })
   })

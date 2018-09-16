@@ -7,6 +7,10 @@ module.exports.update = (model, query, payload) => {
         return reject(err)
       }
 
+      if (!entity) {
+        return reject(new Error('Entity not found.'))
+      }
+
       resolve(Object.assign(entity, payload))
     })
   })
