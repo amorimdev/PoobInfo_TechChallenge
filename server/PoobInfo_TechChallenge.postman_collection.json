@@ -105,6 +105,27 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://localhost:5000/companies/Y3q4UK8z2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"companies",
+								"Y3q4UK8z2"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -194,6 +215,27 @@
 							"mode": "raw",
 							"raw": "{\n\t\"name\": \"test2\"\n}"
 						},
+						"url": {
+							"raw": "http://localhost:5000/customers/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
 						"url": {
 							"raw": "http://localhost:5000/customers/1",
 							"protocol": "http",
