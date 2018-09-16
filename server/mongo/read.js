@@ -1,4 +1,6 @@
-module.exports.find = (model, query) => {
+'use strict'
+
+module.exports.findOne = (model, query) => {
   return new Promise((resolve, reject) => {
     model.findOne(query, (err, entity) => {
       if (err) {
