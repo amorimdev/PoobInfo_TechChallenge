@@ -3,11 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "author": "Jhonatan Amorim (amorim.dev@gmail.com)",
-  "proxy": "http://localhost:5000/",
+  "proxy": "http://localhost:5000",
   "dependencies": {
+    "moment": "^2.22.2",
     "react": "^16.5.1",
+    "react-datetime": "^2.15.0",
     "react-dom": "^16.5.1",
-    "react-scripts": "1.1.5"
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "1.1.5",
+    "react-select": "^2.0.0",
+    "react-table": "^6.8.6"
   },
   "scripts": {
     "start": "react-scripts start",
